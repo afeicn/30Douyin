@@ -1,0 +1,31 @@
+name = "vibe-working-course"
+compatibility_date = "2024-01-15"
+
+[env.production]
+name = "vibe-working-course"
+
+# Static site configuration for Cloudflare Pages
+# This tells Wrangler that this is a static site, not a Worker
+# The build output will be in the 'dist' directory (Vite default)
+
+# For static sites, we need to specify the build command and output directory
+# These will be used when deploying to Cloudflare Pages
+
+# Build configuration
+# build_command = "pnpm run build"
+# build_output_dir = "dist"
+
+# For static site deployment, we can use Pages instead of Workers
+# This configuration is for Pages deployment
+[build]
+command = "pnpm run build"
+output_dir = "dist"
+
+# Pages configuration
+[pages]
+build_output_dir = "dist"
+node_version = "18"
+
+# Environment variables (if needed)
+# [vars]
+# NODE_ENV = "production"
