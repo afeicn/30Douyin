@@ -17,6 +17,31 @@
             text-align: center;
             margin-bottom: 40px;
         }
+        
+        .nav-bar {
+            margin-bottom: 2rem;
+        }
+        
+        .vibe-link {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            transition: all 0.3s ease;
+        }
+        
+        .vibe-link:hover {
+            color: #764ba2;
+            border-color: #667eea;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2));
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
         h1 {
             color: #2c3e50;
             font-size: 2.5em;
@@ -83,6 +108,9 @@
 </head>
 <body>
     <div class="header">
+        <nav class="nav-bar">
+            <a href="https://vw.pomootech.xyz/" target="_blank" class="vibe-link">vibe working</a>
+        </nav>
         <h1>📺 直播脚本索引</h1>
         <p class="subtitle">按时间排序的直播脚本文件列表</p>
     </div>
